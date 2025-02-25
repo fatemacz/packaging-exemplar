@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools", "wheel", "build"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "packaging-exemplar-fatemacz"
+version = "0.0.1"
+authors = [
+  { name="Aye Chan Zaw", email="fate.macz@gmail.com" },
+]
+description = "A small example package"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = {file = "LICENSE"}
+[project.urls]
+Homepage = "https://github.com/fatemacz/packaging-exemplar"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = [
+  "tests",
+]
